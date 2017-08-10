@@ -119,9 +119,7 @@ while (k != 7):
 		if check_anime(nome):
 			nova_qtde = int(raw_input("Indique a nova quantidade de episodios "))
 			att_anime(nome,nova_qtde)
-			anime.to_csv(sys.argv[1],index=False)
 			print "A quantidade de episodios foi atualizada, aguarde a atualizacao do agrupamento"
-			anime = pd.read_csv(open(sys.argv[1]))
 			distances, indices = knn()
 			print "Knn realizado com sucesso"
 		else:
@@ -136,9 +134,7 @@ while (k != 7):
 			nota = float(raw_input("Informe a nota de classificacao do anime de 0.0 a 10.0: "))
 			membros = int(raw_input("Informe o numero de fas do anime, caso nao saiba o numero exato, escreva 0 ou um numero aproximado: "))
 			anime = add_anime(nome,genero,tipo,episodios,nota,membros)
-			anime.to_csv(sys.argv[1],index=False)
 			print "Seu anime foi inserido, aguarde a atualizacao do agrupamento"
-			anime = pd.read_csv(open(sys.argv[1]))
 			distances, indices = knn()
 			print "Knn realizado com sucesso"
 		else:
