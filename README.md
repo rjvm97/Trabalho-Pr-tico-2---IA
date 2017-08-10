@@ -24,6 +24,6 @@ assim como, as informações das bibliotecas utilizadas, sklearn em http://sciki
 Entretanto, é importante ressaltar que o dataset utilizado para a versão final do programa desenvolvido é uma atualização feita 
 pelo grupo do dataset original.
 
-O link para a explicação passo a passo do código é o seguinte:
+O link para a explicação passo a passo do código é o seguinte: https://youtu.be/BSTwzrfpr10
 
 
